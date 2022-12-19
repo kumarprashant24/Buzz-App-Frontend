@@ -2,7 +2,7 @@ export let API_URL;
 
 if (process.env.REACT_APP_STAGE === 'prod') {
   console.log(process.env);
-  API_URL = 'https://buzz-social-media.herokuapp.com/api';
+  API_URL = 'https://buzz-app-backend.vercel.app/api';
 }
 if (process.env.REACT_APP_STAGE === 'dev') {
   API_URL = 'http://localhost:5000/api';
