@@ -1,12 +1,15 @@
 export let API_URL;
 
- console.log(API_URL);
+
 if (process.env.REACT_APP_STAGE === 'prod') {
   console.log(process.env);
   API_URL = 'https://buzz-app-backend.vercel.app/api';
+  console.log(API_URL);
 }
 if (process.env.REACT_APP_STAGE === 'dev') {
+  
   API_URL = 'http://localhost:5000/api';
+  console.log(API_URL);
 }
 
 export const API_CHECKAUTH = `${API_URL}/auth/login/success`;
