@@ -1,5 +1,6 @@
 export let API_URL;
 
+ console.log(API_URL);
 if (process.env.REACT_APP_STAGE === 'prod') {
   console.log(process.env);
   API_URL = 'https://buzz-app-backend.vercel.app/api';
